@@ -10,11 +10,53 @@ and ensure consistency across the board.
 Beyond serving as a facilitative tool for our project process, this handbook
 also complements our time-based release policy[^1].
 
-## Terminology
+## Work Item (Task) Statuses
+In the lifecycle of a work item, it moves through several statuses that reflect
+its progress within the project workflow.
+
+Understanding these statuses is essential for tracking the progress of work
+items and managing project workflow efficiently. It is vital to ensure that each
+work item moves through these stages in a manner that aligns with our project
+management methodology.
+
+Here are the key statuses that a work item can have:
+
+1. **New:** This status indicates that a work item has been recently introduced
+   to the project. These tasks need further refinement before they can be
+   assigned for completion.
+
+2. **Groom:** This status is used when a task requires immediate priority for
+   analysis. It signifies the need for accelerated consideration in order to
+   address essential aspects of the project.
+
+3. **Backlog:** Tasks in this status are already analyzed but have not been
+   scheduled for a particular iteration yet. They are prioritized by their
+   position in the backlog list.
+
+4. **To Do:** Tasks with this status are scheduled for an iteration and are
+   ready to be worked on.
+
+5. **In Progress:** This status signifies that a task is currently being worked
+   on.
+
+6. **In Review:** Once a task's execution phase is complete, it moves into the
+   In Review status. This stage involves verifying the task's completion and
+   quality.
+
+7. **Done:** This status signifies the successful completion of a work item.
+
+8. **Rejected:** This status indicates that a task has been evaluated and deemed
+   unnecessary or not feasible at the current time. Tasks may be rejected during
+   the refinement or review process.
 
 ## Views
 Our Project Board features various Views, each catering to a specific aspect of
-our project management strategy
+our project management strategy. They include "Next", "Epics", "Refine", "Plan",
+"Iterate", "Me", "WG", and "OMC".
+
+The lifecycle of a work item typically flows from "Next", through "Epics",
+"Refine", "Plan", and ends up in "Iterate". Detailed descriptions of each view's
+unique function and role within the project are presented below.
 
 ### 1. Me:
 This is your personal workspace where you can track tasks and updates relevant
