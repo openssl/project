@@ -1,11 +1,10 @@
 # Project Board Handbook
 ## Introduction
 **OpenSSL Project Board** handbook is a practical guide to understanding the
-project, our concerted effort towards achieving objectives, and this handbook is
-a tool to facilitate this process. Contained within, you'll find detailed
-information about our methodologies, expected outcomes, team member
-responsibilities, and timelines. This resource aims to streamline our operations
-and ensure consistency across the board.
+project and our concerted effort towards achieving objectives. Contained within,
+you'll find detailed information about our methodologies, expected outcomes,
+team member responsibilities, and timelines. This resource aims to streamline
+our operations and ensure consistency across the board.
 
 Beyond serving as a facilitative tool for our project process, this handbook
 also complements our time-based release policy[^1].
@@ -22,8 +21,8 @@ management methodology.
 Here are the key statuses that a work item can have:
 
 1. **New:** This status indicates that a work item has been recently introduced
-   to the project. These tasks need further refinement before they can be
-   assigned for completion.
+   to the project. These tasks need further triage before they can be assigned
+   for completion.
 
 2. **Groom:** This status is used when a task requires immediate priority for
    analysis. It signifies the need for accelerated consideration in order to
