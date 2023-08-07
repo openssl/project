@@ -174,14 +174,14 @@ for the next release. This helps streamline the planning process and ensure that
 the project stays on track and delivers consistent value.
 
 ### 7. WG:
-WG stands for Working Group, a broader collective encompassing OpenSSL engineers
-and members of the OpenSSL Management Committee (OMC). This expansive group
-enhances the project's comprehensive view, which includes a traditional Kanban
-board employed to manage and monitor the progress of OpenSSL Project's
-administrative and governance tasks. However, some of these tasks, containing
-sensitive data, may not be publicly visible due to confidentiality requirements.
-As a group, we are committed to operating openly and transparently, hence
-everything that can be made public will be made public.
+WG stands for Working Group, a broader collective encompassing OpenSSL project
+paid and volunteer resources. This expansive group enhances the project's
+comprehensive view, which includes a traditional Kanban board employed to manage
+and monitor the progress of OpenSSL Project's administrative and governance
+tasks. However, some of these tasks, containing sensitive data, may not be
+publicly visible due to confidentiality requirements. As a group, we are
+committed to operating openly and transparently, hence everything that can be
+made public will be made public.
 
 ### 8. OMC:
 The OMC view refers to a dedicated board to manage and track tasks specific to
