@@ -24,7 +24,7 @@ Here are the key statuses that a work item can have:
    to the project. These tasks need further triage before they can be assigned
    for completion.
 
-2. **Groom:** This status is used when a task requires immediate priority for
+2. **Refine:** This status is used when a task requires immediate priority for
    analysis. It signifies the need for accelerated consideration in order to
    address essential aspects of the project.
 
@@ -139,7 +139,7 @@ establishes a clear understanding of the task's scope, which assists in more
 accurate scheduling and resource allocation.
 
 Sometimes, it's essential to fast-track the analysis of a specific task. For
-this, we utilize the "Groom" status, marking a task for immediate attention and
+this, we utilize the "Refine" status, marking a task for immediate attention and
 giving it a higher priority in the analysis process.
 
 Furthermore, during this refinement stage, tasks can be linked to existing
