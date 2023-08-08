@@ -23,27 +23,20 @@ Here are the key statuses that a work item can have:
 1. **New:** This status indicates that a work item has been recently introduced
    to the project. These tasks need further triage before they can be assigned
    for completion.
-
 2. **Refine:** This status is used when a task requires immediate priority for
    analysis. It signifies the need for accelerated consideration in order to
    address essential aspects of the project.
-
 3. **Backlog:** Tasks in this status are already analyzed but have not been
    scheduled for a particular iteration yet. They are prioritized by their
    position in the backlog list.
-
 4. **To Do:** Tasks with this status are scheduled for an iteration and are
    ready to be worked on.
-
 5. **In Progress:** This status signifies that a task is currently being worked
    on.
-
 6. **In Review:** Once a task's execution phase is complete, it moves into the
    In Review status. This stage involves verifying the task's completion and
    quality.
-
 7. **Done:** This status signifies the successful completion of a work item.
-
 8. **Rejected:** This status indicates that a task has been evaluated and deemed
    unnecessary or not feasible at the current time. Tasks may be rejected during
    the refinement or review process.
@@ -68,7 +61,7 @@ is crucial for differentiating project development tasks from administrative and
 governance tasks. These types of tasks are tracked in separate individual views,
 ensuring clear segmentation and efficient management of various project aspects.
 
-### 2. Iterate:
+### 2. Iterate:[^2]
 The Iterate view is an integral part of the Development Phase[^1] of our
 project. This phase is divided into two-week iterations, which start on Friday
 and end on Thursday. Displayed as a classic Kanban board, the Iterate view is
@@ -82,7 +75,7 @@ Further clarity is enhanced by the assignment details displayed for each task.
 This allows a quick overview of who is responsible for each task, thus fostering
 accountability and promoting project progress.
 
-Task cards also display their estimated complexity[^2], a measure determined
+Task cards also display their estimated complexity[^3], a measure determined
 during the planning and refinement stages. If a new task is introduced during an
 iteration, it's essential not to estimate its complexity unless it had already
 been evaluated and planned for future iterations.
@@ -163,7 +156,7 @@ assignment helps maintain accountability within the team.
 
 ### 6. Next:
 The Next view is a pivotal component during the Release Definition[^1] phase of
-our project, acting as a key instrument for the release steering committee[^3].
+our project, acting as a key instrument for the release steering committee[^4].
 Items that carry the "next" label land in this view, denoting their importance
 for the forthcoming project releases. These can range from small tasks to large
 Epics, but regardless of size, they all bring unique aspects or value to the
@@ -189,8 +182,11 @@ the OpenSSL Management Committee (OMC). A comprehensive list of such work can be
 found in the [OpenSSL Bylaws document].
 
 [^1]: [Time-based Release Policy](TODO:link)
-[^2]: Expressed using the Fibonacci sequence (1, 2, 3, 5, 8, 13, 21, etc.)
-[^3]: The release steering committee, including an OpenSSL project manager and
+[^2]: **Iteration** serves the same purpose as **Sprint**, a term prevalent in
+    the Scrum methodology. We used Iteration as it's the default field name in
+    GitHub Projects, which saved us time with board configuration.
+[^3]: Expressed using the Fibonacci sequence (1, 2, 3, 5, 8, 13, 21, etc.)
+[^4]: The release steering committee, including an OpenSSL project manager and
     engineer, as well as community representatives, optimally represents the
     project's needs.
 
