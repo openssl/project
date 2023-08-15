@@ -181,7 +181,7 @@ The OMC view refers to a dedicated board to manage and track tasks specific to
 the OpenSSL Management Committee (OMC). A comprehensive list of such work can be
 found in the [OpenSSL Bylaws document].
 
-[^1]: [Time-based Release Policy](TODO:link)
+[^1]: [Time-based Release Policy](https://www.openssl.org/policies/general/release-policy.html)
 [^2]: **Iteration** serves the same purpose as **Sprint**, a term prevalent in
     the Scrum methodology. We used Iteration as it's the default field name in
     GitHub Projects, which saved us time with board configuration.
