@@ -184,7 +184,7 @@ found in the [OpenSSL Bylaws document].
 [^1]: [Time-based Release Policy](https://www.openssl.org/policies/general/release-policy.html)
 [^2]: **Iteration** serves the same purpose as **Sprint**, a term prevalent in
     the Scrum methodology. We used Iteration as it's the default field name in
-    GitHub Projects, which saved us time with board configuration.
+    GitHub Projects.
 [^3]: Expressed using the Fibonacci sequence (1, 2, 3, 5, 8, 13, 21, etc.)
 [^4]: The release steering committee, including an OpenSSL project manager and
     engineer, as well as community representatives, optimally represents the
