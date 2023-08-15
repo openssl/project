@@ -186,8 +186,10 @@ found in the [OpenSSL Bylaws document].
     the Scrum methodology. We used Iteration as it's the default field name in
     GitHub Projects.
 [^3]: Expressed using the Fibonacci sequence (1, 2, 3, 5, 8, 13, 21, etc.)
-[^4]: The release steering committee, including an OpenSSL project manager and
-    engineer, as well as community representatives, optimally represents the
-    project's needs.
+[^4]: Release Steering Committee - A group comprised of four individuals: one
+    internal member from OpenSSL, two specially invited representatives from the
+    community, and the engineering manager. This committee is dedicated to
+    guiding the release cycle, defining release priorities, and authorizing
+    release backlog modifications.
 
 [OpenSSL Bylaws document]: https://www.openssl.org/policies/omc-bylaws.html#OMC
