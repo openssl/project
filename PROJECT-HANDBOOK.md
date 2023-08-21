@@ -43,10 +43,10 @@ Here are the key statuses that a work item can have:
 
 ## Views
 Our Project Board features various Views, each catering to a specific aspect of
-our project management strategy. They include "Next", "Epics", "Refine", "Plan",
+our project management strategy. They include "Epics", "Next", "Refine", "Plan",
 "Iterate", "Me", "WG", and "OMC".
 
-The lifecycle of a work item typically flows from "Next", through "Epics",
+The lifecycle of a work item typically flows from "Epics", through "Next",
 "Refine", "Plan", and ends up in "Iterate". Detailed descriptions of each view's
 unique function and role within the project are presented below.
 
