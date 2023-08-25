@@ -145,16 +145,7 @@ By effectively managing task statuses, prioritizing when necessary, and linking
 tasks to Epics, the Refine view helps streamline our development workflow,
 optimizing task management, and enhancing project tracking.
 
-### 5. Epics:
-Epics are substantial project components that often contain multiple related
-tasks. The Epics view is used to track the progress of these significant
-elements. It shows the status of each Epic, including how many tasks are
-complete and how many remain.
-
-Additionally, this view displays the individual responsible for each Epic. This
-assignment helps maintain accountability within the team.
-
-### 6. Next:
+### 5. Next:
 The Next view is a pivotal component during the Release Definition[^1] phase of
 our project, acting as a key instrument for the release steering committee[^4].
 Items that carry the "next" label land in this view, denoting their importance
@@ -165,6 +156,15 @@ project and the community.
 The release steering committee uses the Next view to select and prioritize work
 for the next release. This helps streamline the planning process and ensure that
 the project stays on track and delivers consistent value.
+
+### 6. Epics:
+Epics are substantial project components that often contain multiple related
+tasks. The Epics view is used to track the progress of these significant
+elements. It shows the status of each Epic, including how many tasks are
+complete and how many remain.
+
+Additionally, this view displays the individual responsible for each Epic. This
+assignment helps maintain accountability within the team.
 
 ### 7. WG:
 WG stands for Working Group, a broader collective encompassing OpenSSL project
