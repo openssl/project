@@ -9,6 +9,35 @@ our operations and ensure consistency across the board.
 Beyond serving as a facilitative tool for our project process, this handbook
 also complements our time-based release policy[^1].
 
+## Flowchart for evaluating/scheduling Items on the project board
+```mermaid
+graph TB;
+A[New Issue] -- Wrangler adds to project board via triage --> B[Issue in New State];
+subgraph Backlog Refinement Meeting
+   direction TB;
+   B  --> C{{Is issue in Refine state}};
+   C -->|No| D[Assign Engineer for evaluation/Move To Refine State];
+   C -->|Yes| F[Review Engineer evaluation];
+   F --> G[Move issue to Ready for Scheduling State, unassign Engineer]
+end
+subgraph Independent work during the week
+   direction TB;
+   D -- Engineer evaluates issue asynchronously --> E[Definition of done added to issue];
+   E --> C;
+end
+subgraph done
+   I[Done];
+end
+subgraph Planning Meeting
+   direction TB;
+   G --> H{{Is Issue Ready for Scheduling}};
+   H -->|No| I[done];
+   H -->|Yes| J[Assign Engineer to issue];
+   J --> K[Select iteration, place on schedule tracker];
+   K --> I
+end 
+```
+
 ## Work Item (Task) Statuses
 In the lifecycle of a work item, it moves through several statuses that reflect
 its progress within the project workflow.
