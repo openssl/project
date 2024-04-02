@@ -12,7 +12,7 @@ also complements our time-based release policy[^1].
 ## Flowchart for evaluating/scheduling Items on the project board
 ```mermaid
 graph TB;
-A[New Issue] -- Wrangler adds to project board via triage --> B[Issue in New State];
+A[New Issue] -- Wrangler adds to project board via triage --> B[Issue in New/Refine State];
 subgraph Backlog Refinement Meeting
    direction TB;
    B  --> C{{Is issue in Refine state}};
@@ -31,7 +31,7 @@ end
 subgraph Planning Meeting
    direction TB;
    G --> H{{Is Issue Ready for Scheduling}};
-   H -->|No| I[done];
+   H -->|No| B;
    H -->|Yes| J[Assign Engineer to issue];
    J --> K[Select iteration, place on schedule tracker];
    K --> I
