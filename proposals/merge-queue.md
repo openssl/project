@@ -1,10 +1,10 @@
 ---
 title: Merge queue for openssl/openssl
-status: draft
+status: accepted
 category: infrastructure
 author: Dmitry Misharov <dmitry@openssl.org>
 created: 2026-09-22
-updated: 2026-09-24
+updated: 2026-10-02
 ---
 
 # Merge queue for openssl/openssl
