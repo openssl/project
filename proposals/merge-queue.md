@@ -221,9 +221,10 @@ and the existing hooks check the candidate's trailers early. Three hooks,
 a new branch unless it is named `openssl-*` or `feature/*`. All three need a clause for
 `queue/*` and `backport/*` that diffs against the target branch, tested against the real
 hook environment for creating, replacing and deleting these refs. The release-freeze
-ruleset covers the new namespaces too, since it excludes only `feature/*`: during a
-freeze the lane's candidate push is refused, the lane pauses and shows that on the PRs,
-and resumes when the freeze is lifted.
+ruleset excludes `queue/*` and `backport/*`, as it does `feature/*`: during a freeze
+candidates keep building and only the fast-forward of the frozen branch is refused. The
+lane holds its green candidate, shows the freeze on the PR, and lands when the freeze is
+lifted.
 
 **How the gate is enforced.** Branch protection on the canonical server gets a push
 restriction: only the lane's identity may push to master and the release branches. This
