@@ -22,7 +22,9 @@ checks a CI result for the commit that lands.
 The fix: a bot does the rebase, CI runs on the result, and the branch moves only if CI is
 green. That is a merge queue. The main gains are less manual work for maintainers and a
 guarantee about what lands. It does not fix flaky tests; a flake becomes a red candidate
-instead of a red master. Known flakes are quarantined or fixed first, and a committer can
+instead of a red master. New code keeps adding flaky tests, so they are handled as
+ongoing upkeep, not fixed once before the queue starts: a recipe that fails twice in 30
+days gets an issue for its author and is quarantined if it stays unfixed. A committer can
 waive a flaky job on a candidate, on the record (see Failed candidates).
 
 OpenSSL already has a second CI step. At two committer approvals the bot runs eleven
@@ -445,8 +447,8 @@ proposal is accepted, they go into PRs to `general-policies` and `technical-poli
 
 | Phase | Scope | Exit |
 |---|---|---|
-| 0. Prerequisites | fix the required set, the 30-minute cut and the expected jobs per workflow; quarantine or fix the known flaky jobs (qlog on macOS, FreeBSD); announce | no required job fails on master more than once a week |
-| 1. Shadow, 4 to 6 weeks | clause in three hooks; master lane building at two approvals; full list including long jobs; heavy dispatch redirected to the candidate; advisory check; `ghmerge` unchanged | classified red-candidate counts, long-job-only failures, tree-match rate, candidate duration, replayed serial-lane wait distribution |
+| 0. Prerequisites | fix the required set, the 30-minute cut and the expected jobs per workflow; weekly count of required-job failures on master; issues for the known flaky tests; announce | the weekly count is published |
+| 1. Shadow, 4 to 6 weeks | clause in three hooks; master lane building at two approvals; full list including long jobs; heavy dispatch redirected to the candidate; advisory check; `ghmerge` unchanged | classified red-candidate counts, long-job-only failures, tree-match rate, candidate duration, replayed serial-lane wait distribution; in the last two weeks, no more than two candidates a week red for a reason other than the PR |
 | 2. Auto backport PRs | bot opens them on landing; pending labels; manual picks still allowed | committers prefer the generated PRs |
 | 3. Landing on master | serial lane; 30-minute cut in force; dispatch inputs added to the push workflows; autosquash and `/squash`; approval carry-over; `/queue waive`; eligibility recheck; push restriction on master; push CI still on | 4 weeks of landings; wait bound held; waivers per week trending down |
 | 4. Drop duplicate CI | skip master push tests where candidate evidence exists | emergency and release pushes still covered |
