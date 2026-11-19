@@ -215,12 +215,12 @@ Cost: one extra push-set run per approved PR. The heavy set costs what it costs 
 
 **Why the main repository and not a mirror.** `windows.yml` downloads dependencies
 differently when the repository is not `openssl/openssl`; a mirror would test a path
-master never runs. Pushing to the canonical server also means the sync needs no change
-and the existing hooks check the candidate's trailers early. Three hooks,
-`check-reviews`, `no-fixup-or-squash` and `no-merge-commits`, scan the whole history for
-a new branch unless it is named `openssl-*` or `feature/*`. All three need a clause for
-`queue/*` and `backport/*` that diffs against the target branch, tested against the real
-hook environment for creating, replacing and deleting these refs. The release-freeze
+master never runs. Pushing to the canonical server also means the sync needs no change.
+Three hooks, `check-reviews`, `no-fixup-or-squash` and `no-merge-commits`, scan the whole
+history for a new branch unless it is named `openssl-*` or `feature/*`. They skip
+`queue/*` and `backport/*`, so creating, force-pushing and deleting candidates is never
+refused or slowed; the commits are checked when they land on master or a release
+branch. The release-freeze
 ruleset excludes `queue/*` and `backport/*`, as it does `feature/*`: during a freeze
 candidates keep building and only the fast-forward of the frozen branch is refused. The
 lane holds its green candidate, shows the freeze on the PR, and lands when the freeze is
@@ -454,7 +454,7 @@ proposal is accepted, they go into PRs to `general-policies` and `technical-poli
 | 5. Release-branch lanes | one lane per branch; manual cherry-picks banned | all release-branch commits arrive via PR |
 | 6. Optional | two-step CI (heavy workflows only on candidates) | committer decision |
 
-Phase 1 touches the repository only through the `queue/*` branches and the hook clause.
+Phase 1 touches the repository only through the `queue/*` branches and the hook change.
 No workflow edits, no protection changes.
 
 ## Risks
@@ -527,7 +527,7 @@ flowchart LR
         QB["queue/pr-N<br/>candidate branches"]
         BB["backport/*<br/>branches"]
         MSTR[master /<br/>release branches]
-        HOOKS[pre-receive hooks<br/>trailers, CLA,<br/>queue/* clause]
+        HOOKS[pre-receive hooks<br/>trailers, CLA,<br/>skip queue/*]
     end
 
     BOT["openssl-ci-bot<br/>(GitHub App, exists)<br/>webhooks, approvals,<br/>enqueue, check runs,<br/>backport PRs, waivers"]
